@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background-color: #c5a19c;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #e6e0c4;
+    margin: 20px;
+}
+
+h2{
+    font-family: "Caveat", serif;
+    font-size: 30px;
+}
+
+p {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: #e6e0c4;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+    
+}
+
+#formulario{
+    background-color: #774854;
+    /* adicionei border-radius no seu formulario */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* deixando a direção do meu formulário em coluna para ficar um abaixo do outro */
+    flex-direction: column;
+    padding: 50px;
+    width: 30%;
+    /* deixando as margens da direita e esquerda de maneira igual (isso empurra para o centro) */
+    margin: auto;
+    text-align: center;
+    gap: 15px;  
+
+}
+
+
+.resultado {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 20px;
+}
+.card {
+    background-color: #e6e0c4;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.486);
+}
+  
+
+#nome {
+    border: 2px solid #e6e0c4;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.5s ease-in-out;
+    background-color: #774854;
+
+}
+
+#nome:focus {
+  outline: none;
+  border: 2px solid #e6e0c4;
+  box-shadow: 0px 0px 10px #e6e0c4;
+}
+
+
+#botao {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    transition: 0.5s ease-in-out;
+}
+
+#botao:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px rgb(112, 1, 16);
+    color: #774854;
+    background-color: #e6e0c4;
+}
+.botao2 {
+    padding: 10px;
+    background-color: transparent;
+    max-width: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+.botao2:hover {
+    transform: scale(1.02);
+    background-color: rgb(221, 77, 89);
+    transform-origin: center;
+}
+.botao3 {
+    padding: 10px;
+    max-width: 30px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    border-radius: 20px;
+}
+.botao3:hover {
+    transform: scale(1.02);
+    transform-origin: center;
+    background-color: lightgreen;
+}
